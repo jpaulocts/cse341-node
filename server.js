@@ -2,6 +2,7 @@
 const express = require('express');
 const app = express();
 const router = express.Router();
+const lesson1Controller = require("./controllers/lesson1")
  
 router.get('/home', (req, res) => {
   res.send('Hello World, This is home router');
@@ -18,6 +19,8 @@ router.get('/login', (req, res) => {
 router.get('/logout', (req, res) => {
   res.send('Hello World, This is logout router');
 });
+
+app.get()
  
 app.use('/', router);
  
